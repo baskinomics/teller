@@ -1,6 +1,6 @@
-# Teller-Py
+# Teller
 
-Early days of a utility program used to perform ETL on Bank of America (BofA) transaction text files. At the time of this writing it merely removes the pre-header information from the file.
+Teller in its current state represents the early days of a utility program used to perform ETL on Bank of America (BofA) transaction text files. At the time of this writing it merely removes the pre-header information from the file.
 
 ## Getting Started
 
