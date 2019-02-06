@@ -4,7 +4,7 @@ import fire
 class TransactionUtil(object):
     """ TODO: Documentation """
 
-    def clean(self, input, output):
+    def clean(self, input):
         """
         Reads the input transactions file and removes the preheader info.
 
@@ -13,7 +13,7 @@ class TransactionUtil(object):
 
         # Read the input file into a list without the pre-header information
         with open(input, 'r+') as f:
-            transactions = f.readlines()[7:]
+            transactions = f.readlines()[6:]
 
             # Set the stream position to the beginning
             f.seek(0)
