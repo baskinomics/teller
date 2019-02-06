@@ -12,13 +12,18 @@ class TransactionUtil(object):
         """
 
         # Read the input file into a list without the pre-header information
-        with open(input) as f:
+        with open(input, 'r+') as f:
             transactions = f.readlines()[7:]
 
-        # Write the cleaned data to a new file
-        with open(output, 'w') as f:
+            # Set the stream position to the beginning
+            f.seek(0)
+
+            # Write the data back to the file
             for record in transactions:
                 f.write(record)
+
+            # Why?
+            f.truncate()
 
 
 if __name__ == '__main__':
