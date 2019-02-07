@@ -2,7 +2,7 @@
 
 Teller is a utility script used to sanitize Bank of America transaction statements provided in a `.csv` file. These `.csv` files are downloaded from the BofA website and intended to be imported into Excel.
 
-I intend to access this data via a programmatic approach for analysis, but the content of the file does not conform to a tabular data structure causing an unnecessary headache. Specifically there is descriptive information with its own columns and values prior to the actual tabular data representing the transactions themselves, i.e.
+I, however, intend to access this data via a programmatic approach for analysis. Unfortunately the content of the file does not conform to a tabular data structure causing an unnecessary headache. Specifically there is descriptive information with its own columns and values prior to the actual tabular data representing the transactions themselves, i.e.
 
 ```
 Description,,Summary Amt.
