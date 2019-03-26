@@ -1,6 +1,6 @@
 # Teller
 
-Teller is a utility script used to sanitize Bank of America transaction statements provided in a `.csv` file. These `.csv` files are downloaded from the BofA website and intended to be imported into Excel.
+Teller is a command-line interface ("CLI") program used to sanitize Bank of America transaction statements provided in a `.txt` file. These `.txt` files are downloaded from the BofA website and intended to be imported into Excel.
 
 I, however, intend to access this data via a programmatic approach for analysis. Unfortunately the content of the file does not conform to a tabular data structure causing an unnecessary headache. Specifically there is descriptive information with its own columns and values prior to the actual tabular data representing the transactions themselves, i.e.
 
@@ -19,10 +19,10 @@ The purpose of this script is to remove that information.
 
 ## Getting Started
 
-This project uses [Python Fire](https://github.com/google/python-fire). To run:
+This project uses [Rust](https://www.rust-lang.org/). To run:
 
 ```bash
 $ git clone git@github.com:baskinomics/teller.git
 $ cd teller/
-$ python3 teller.py clean /path/to/statements/transactions.txt /path/to/output/filename.txt
+$ cargo run --input /path/to/statements/transactions.txt
 ```
