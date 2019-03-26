@@ -1,0 +1,8 @@
+[package]
+name = "teller"
+version = "0.1.0"
+authors = ["Sean Baskin <seanbaskin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "~2.32"
