@@ -1,0 +1,11 @@
+Description                                                                                      Summary Amt.
+Beginning balance as of 01/01/2019                                                                      50.00
+Total credits                                                                                          100.00
+Total debits                                                                                           -50.00
+Ending balance as of 01/31/2019                                                                         50.00
+
+
+Date           Description                                                                  Amount Running Bal.
+01/01/2019     Beginning balance as of 01/10/2019                                                          0.00
+01/15/2019     DEPOSIT                                                                      100.00       100.00
+01/31/2019     LOBSTERS                                                                     -50.00        50.00
